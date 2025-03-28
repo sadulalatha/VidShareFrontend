@@ -2,8 +2,8 @@ import axios from "axios";
 
 const baseURL = import.meta.env.VITE_API_BASE_URL;
 
-const request = axios.create({ baseURL, withCredentials: true });
-
+const request = axios.create({ baseURL, withCredentials: "include" });
+ 
 // auth services
 export const loginAsync = (creds) => request.post("/auth/login", creds);
 export const registerAsync = (creds) => request.post("/auth/register", creds);
