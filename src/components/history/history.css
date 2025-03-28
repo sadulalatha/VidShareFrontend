@@ -1,0 +1,110 @@
+
+  .watch-history-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .watch-history-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .history-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .clear-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .clear-button:hover {
+    background-color: #e60000;
+  }
+  
+  .history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .history-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s;
+  }
+  
+  .history-item:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .thumbnail {
+    width: 120px;
+    height: 68px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer; 
+  }
+  
+  .video-info {
+    flex: 1;
+  }
+  
+  .video-info h3 {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+    color: #333;
+  }
+  
+  .video-info p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+  }
+  
+  .delete-button {
+    background: none;
+    border: none;
+    color: #ff4d4d;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px;
+    transition: color 0.3s;
+  }
+  
+  .delete-button:hover {
+    color: #e60000;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .no-history {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+  }
+  

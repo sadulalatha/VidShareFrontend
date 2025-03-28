@@ -1,0 +1,16 @@
+
+
+  .video-player {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .play-button-overlay:hover button {
+    background: rgba(0, 0, 0, 0.8); /* Hover effect */
+  }
+  
+  video {
+    display: block;
+    width: 100%;
+  }

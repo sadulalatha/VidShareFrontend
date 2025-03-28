@@ -1,0 +1,100 @@
+
+
+
+.channel-videos {
+    width: 100%;
+    padding: 20px;
+}
+
+.list-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 videos per row */
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.video-card {
+    height: 40vh; /* Set fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+}
+
+.video-card:hover {
+    transform: scale(1.03);
+}
+
+.video-thumbnail {
+    height: 75%; /* Adjust thumbnail height */
+    width: 100%;
+    object-fit: cover; /* Prevent stretching */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.video-info {
+    padding: 10px;
+    height: 25%; /* Adjust info section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Pagination styles */
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagination button {
+    background-color: var(--red);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover:not(:disabled) {
+    background-color: var(--darkred);
+}
+
+.pagination button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .list-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .list-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .list-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
